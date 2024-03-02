@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+
+
+@font-face {
+    font-family: 'Sen-Regular';
+    src: url(../fonts/Sen-Regular.ttf);
+}
+html{
+    font-family: 'Sen-Regular';
+}
+}
+
+  
