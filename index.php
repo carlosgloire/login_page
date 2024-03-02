@@ -1,6 +1,5 @@
 <?php
 require_once('verificateurs/verificateur_login.php');
-require_once('js/flash.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
