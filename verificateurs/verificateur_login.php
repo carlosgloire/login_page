@@ -21,7 +21,7 @@ if(isset($_POST['login'])){
     else{
         if(empty($error_username) AND empty($error_password)){
            
-            header('Location: templates/welcome.php');
+            header('Location: ../templates/welcome.php');
         }
     }
    

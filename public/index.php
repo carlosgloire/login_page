@@ -1,14 +1,14 @@
 <?php
-require_once('verificateurs/verificateur_login.php');
+require_once('../verificateurs/verificateur_login.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="../dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="js/icon_view.js"></script>
+    <script src="../js/icon_view.js"></script>
     <title>Login</title>
 
 </head>
@@ -28,7 +28,7 @@ require_once('verificateurs/verificateur_login.php');
               <label for="password" method='password'>Mot de passe</label>
               <div class="rounded-md items-center border gap-2  flex placeholder-slate-400  px-3 py-[2px]  <?= isset($error_password) ? 'border-red-600 ': 'border-slate-200'?>">
                 <input id="password" class=" outline-none text-slate-400 w-full  placeholder-slate-400" type="password" name='password' value="<?=  isset($_POST['pssword']) ? $_POST['password'] : '';?>"  autocomplete="off" placeholder="Saisissez votre mot de passe">
-                <img class="object-cover  w-[24px] h-[22px] cursor-pointer"  src="images/icon_off.png" alt=""  id="eye_icon" onClick ="changer()">
+                <img class="object-cover  w-[24px] h-[22px] cursor-pointer"  src="../images/icon_off.png" alt=""  id="eye_icon" onClick ="changer()">
               </div>
               <p class="text-red-500 text-sm"><?=isset($_POST['login']) && ! empty($error_password)? $error_password: " "; ?></p>
           </div>
